@@ -1,0 +1,27 @@
+{
+  "name": "applyflow-monorepo",
+  "version": "1.0.0",
+  "description": "ApplyFlow — Professional Job Application Tracker full-stack application",
+  "private": true,
+  "scripts": {
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "install:all": "npm run install:server && npm run install:client",
+    "build:client": "npm --prefix client run build",
+    "test:server": "npm --prefix server test",
+    "ci": "npm run test:server && npm run build:client",
+    "start:server": "npm --prefix server start",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed"
+  },
+  "keywords": [
+    "job-tracker",
+    "react",
+    "vite",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+# Netlify Build and Deploy Configuration for ApplyFlow Frontend
+[build]
+  base = "client"
+  publish = "dist"
+  command = "npm run build"
+
+# Handle Client-Side Routing (Single Page Application)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
